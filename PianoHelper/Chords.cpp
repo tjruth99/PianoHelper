@@ -19,9 +19,13 @@
 		Min7	(root, minT, majT, minT)					(A, C, E, G)
 		Min9	(root, minT, majT, minT, majT)				(A, C, E, G, B)
 		Min11	(root, minT, majT, minT, majT, minT)		(A, C, E, G, B, D)
-		Min11	(root, minT, majT, minT, majT, minT, minT)	(A, C, E, G, B, D, F)
+		Min13	(root, minT, majT, minT, majT, minT, minT)	(A, C, E, G, B, D, F)
 
-	(Add Dominant Chords)
+		d7		major + minT								(C, E, G, A#)
+		d9		major + minT + majT							(C, E, G, A#, D)
+		d11		major + minT + majT + minT					(C, E, G, A#, D, F)
+		d13		major + minT + majT + minT + majT			(C, E, G, A#, D, F, A)
+
 	(Add Diminished Chords)
 	(Add Augmented Chords)
 	(Add Suspended Chords)
@@ -52,6 +56,33 @@ int* maj7(int root) {
 	return notes;
 }
 
+int* maj9(int root) {
+	int * notes = new int[5];
+
+	notes = maj7(root);
+	notes[4] = (notes[3] + 3) % 12;
+
+	return notes;
+}
+
+int* maj11(int root) {
+	int * notes = new int[6];
+
+	notes = maj9(root);
+	notes[5] = (notes[4] + 3) % 12;
+
+	return notes;
+}
+
+int* maj13(int root) {
+	int * notes = new int[7];
+
+	notes = maj11(root);
+	notes[6] = (notes[5] + 4) % 12;
+
+	return notes;
+}
+
 int* minor(int root) {
 	int * notes = new int[3];
 
@@ -62,4 +93,74 @@ int* minor(int root) {
 	return notes;
 }
 
+int* min7(int root) {
+	int * notes = new int[4];
 
+	notes = minor(root);
+	notes[3] = (notes[2] + 3) % 12;
+
+	return notes;
+}
+
+int* min9(int root) {
+	int * notes = new int[5];
+
+	notes = min7(root);
+	notes[4] = (notes[3] + 4) % 12;
+
+	return notes;
+}
+
+int* min11(int root) {
+	int * notes = new int[6];
+
+	notes = min9(root);
+	notes[5] = (notes[4] + 3) % 12;
+
+	return notes;
+}
+
+int* min13(int root) {
+	int * notes = new int[7];
+
+	notes = min11(root);
+	notes[6] = (notes[5] + 3) % 12;
+
+	return notes;
+}
+
+int* d7(int root) {
+	int * notes = new int[4];
+
+	notes = major(root);
+	notes[3] = (notes[2] + 3) % 12;
+
+	return notes;
+}
+
+int* d9(int root) {
+	int * notes = new int[5];
+
+	notes = d7(root);
+	notes[4] = (notes[3] + 4) % 12;
+
+	return notes;
+}
+
+int* d11(int root) {
+	int * notes = new int[6];
+
+	notes = d9(root);
+	notes[5] = (notes[4] + 3) % 12;
+
+	return notes;
+}
+
+int* d13(int root) {
+	int * notes = new int[7];
+
+	notes = d11(root);
+	notes[6] = (notes[5] + 4) % 12;
+
+	return notes;
+}

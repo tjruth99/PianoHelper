@@ -23,7 +23,11 @@
 		Min11	(root, minT, majT, minT, majT, minT)		(A, C, E, G, B, D)
 		Min11	(root, minT, majT, minT, majT, minT, minT)	(A, C, E, G, B, D, F)
 
-	(Add Dominant Chords)
+		d7		major + minT								(C, E, G, A#)
+		d9		major + minT + majT							(C, E, G, A#, D)
+		d11		major + minT + majT + minT					(C, E, G, A#, D, F)
+		d13		major + minT + majT + minT + majT			(C, E, G, A#, D, F, A)
+
 	(Add Diminished Chords)
 	(Add Augmented Chords)
 	(Add Suspended Chords)
@@ -42,3 +46,8 @@ int * min7(int root);
 int * min9(int root);
 int * min11(int root);
 int * min13(int root);
+
+int * d7(int root);
+int * d9(int root);
+int * d11(int root);
+int * d13(int root);
