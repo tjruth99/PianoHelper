@@ -33,9 +33,6 @@
 
 */
 #include "Chords.h"
-#include <iostream>
-
-using namespace std;
 
 int* major(int root) {
 	int * notes = new int[3];
