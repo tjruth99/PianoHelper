@@ -1,24 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow" >
-  <property name="geometry" >
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>320</width>
+    <height>176</height>
    </rect>
   </property>
-  <property name="windowTitle" >
-   <string>MainWindow</string>
+  <property name="windowTitle">
+   <string>Piano Helper</string>
   </property>
-  <widget class="QMenuBar" name="menuBar" />
-  <widget class="QToolBar" name="mainToolBar" />
-  <widget class="QWidget" name="centralWidget" />
-  <widget class="QStatusBar" name="statusBar" />
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="OutputLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>291</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="openExternalLinks">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="NoteComboBox">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>A</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A#/Bb</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C#/Db</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D#/Eb</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>E</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F#/Gb</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G#/Ab</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="ChordTypeComboBox">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>70</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Major</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Maj7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Maj11</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Maj13</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Minor</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Min7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Min11</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Min13</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>110</y>
+      <width>71</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Chord</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
+ <layoutdefault spacing="6" margin="11"/>
  <resources/>
  <connections/>
 </ui>
