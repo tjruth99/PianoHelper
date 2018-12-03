@@ -6,168 +6,341 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>320</width>
-    <height>176</height>
+    <width>334</width>
+    <height>207</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Piano Helper</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QLabel" name="OutputLabel">
+   <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>20</y>
-      <width>291</width>
-      <height>41</height>
+      <x>0</x>
+      <y>0</y>
+      <width>341</width>
+      <height>191</height>
      </rect>
     </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
+    <property name="currentIndex">
+     <number>1</number>
     </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="openExternalLinks">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="NoteComboBox">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>70</y>
-      <width>111</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <item>
-     <property name="text">
-      <string>A</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>A#/Bb</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>B</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>C</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>C#/Db</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>D</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>D#/Eb</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>E</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>F</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>F#/Gb</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>G</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>G#/Ab</string>
-     </property>
-    </item>
-   </widget>
-   <widget class="QComboBox" name="ChordTypeComboBox">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>70</y>
-      <width>111</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <item>
-     <property name="text">
-      <string>Major</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Maj7</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Maj11</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Maj13</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Minor</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Min7</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Min11</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Min13</string>
-     </property>
-    </item>
-   </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>110</y>
-      <width>71</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Chord</string>
-    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Chords</string>
+     </attribute>
+     <widget class="QPushButton" name="chordsButton">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>110</y>
+        <width>71</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Chord</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="ChordsTypeComboBox">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>70</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Major</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Maj7</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Maj11</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Maj13</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Minor</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Min7</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Min11</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Min13</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="ChordsOutputLabel">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>291</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="openExternalLinks">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="ChordsNoteComboBox">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>70</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>A</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>A#/Bb</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>B</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>C</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>C#/Db</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>D</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>D#/Eb</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>E</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>F</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>F#/Gb</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>G</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>G#/Ab</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Scales</string>
+     </attribute>
+     <widget class="QComboBox" name="ScaleTypeComboBox">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>70</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Ionian (Major)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Dorian</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Phrygian</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Lydian</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mixolydian</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Aeolean (Minor)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Locrian</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="scalesButton">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>110</y>
+        <width>71</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Chord</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="ScaleOutputLabel">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>291</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="openExternalLinks">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="ScaleNoteComboBox">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>70</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>A</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>A#/Bb</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>B</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>C</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>C#/Db</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>D</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>D#/Eb</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>E</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>F</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>F#/Gb</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>G</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>G#/Ab</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
    </widget>
   </widget>
   <widget class="QToolBar" name="mainToolBar">

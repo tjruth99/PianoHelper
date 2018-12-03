@@ -55,7 +55,7 @@ int* dorian(int root) {
 	return scale;
 }
 
-int* phyrgian(int root) {
+int* phrygian(int root) {
 	int * scale = new int[8];
 
 	scale[0] = root;

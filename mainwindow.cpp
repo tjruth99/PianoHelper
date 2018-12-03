@@ -16,13 +16,13 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_pushButton_clicked()
+void MainWindow::on_chordsButton_clicked()
 {
     QString notes[12] = {"A", "A#/Bb", "B", "C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb", "G", "G#/Ab"};
 
-    QString s = ui->NoteComboBox->currentText();
-    int cts = ui->ChordTypeComboBox->currentIndex();
-    QString c;
+    QString s = ui->ChordsNoteComboBox->currentText();
+    int cts = ui->ChordsTypeComboBox->currentIndex();
+    QString o;
     int noteInt = -1;
     int chordLength = 0;
 
@@ -73,12 +73,63 @@ void MainWindow::on_pushButton_clicked()
     }
 
     for(int i = 0; i < chordLength; i++){
-       c.append(notes[chord[i]]);
+       o.append(notes[chord[i]]);
        if(i != chordLength-1 )
-            c.append(", ");
+            o.append(", ");
     }
 
-    ui->OutputLabel->setText(c);
+    ui->ChordsOutputLabel->setText(o);
 }
 
+void MainWindow::on_scalesButton_clicked()
+{
+    QString notes[12] = {"A", "A#/Bb", "B", "C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb", "G", "G#/Ab"};
 
+    QString s = ui->ScaleNoteComboBox->currentText();
+    int cts = ui->ScaleTypeComboBox->currentIndex();
+    QString o;
+    int noteInt = -1;
+
+    for(int i = 0; i < 12; i++){
+        if(QString::compare(notes[i], s) == 0){
+            noteInt = i;
+            break;
+        }
+    }
+
+    int * scale;
+
+    switch(cts){
+        case 0:
+            scale = ionian(noteInt);
+            break;
+        case 1:
+            scale = dorian(noteInt);
+            break;
+        case 2:
+            scale = phrygian(noteInt);
+            break;
+        case 3:
+            scale = lydian(noteInt);
+            break;
+        case 4:
+            scale = mixolydian(noteInt);
+            break;
+        case 5:
+            scale = aeolian(noteInt);
+            break;
+        case 6:
+            scale = locrian(noteInt);
+            break;
+        default:
+            scale = ionian(0);
+    }
+
+    for(int i = 0; i < 7; i++){
+       o.append(notes[scale[i]]);
+       if(i != 6 )
+            o.append(", ");
+    }
+
+    ui->ScaleOutputLabel->setText(o);
+}
