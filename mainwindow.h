@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QLabel>
 
 namespace Ui {
 class MainWindow;
@@ -22,6 +23,10 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    QString notes[12] = {"A", "A#/Bb", "B", "C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb", "G", "G#/Ab"};
+    QVector<QLabel*> notelabels;
+
+    void updatePiano(int * noteArray, int n);
 };
 
 #endif // MAINWINDOW_H

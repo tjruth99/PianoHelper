@@ -9,6 +9,36 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    // There is a better solution to this, but want to get the basic logic working first
+    notelabels.append(ui->notelabel_00);
+    notelabels.append(ui->notelabel_01);
+    notelabels.append(ui->notelabel_02);
+    notelabels.append(ui->notelabel_03);
+    notelabels.append(ui->notelabel_04);
+    notelabels.append(ui->notelabel_05);
+    notelabels.append(ui->notelabel_06);
+    notelabels.append(ui->notelabel_07);
+    notelabels.append(ui->notelabel_08);
+    notelabels.append(ui->notelabel_09);
+    notelabels.append(ui->notelabel_10);
+    notelabels.append(ui->notelabel_11);
+    notelabels.append(ui->notelabel_12);
+    notelabels.append(ui->notelabel_13);
+    notelabels.append(ui->notelabel_14);
+    notelabels.append(ui->notelabel_15);
+    notelabels.append(ui->notelabel_16);
+    notelabels.append(ui->notelabel_17);
+    notelabels.append(ui->notelabel_18);
+    notelabels.append(ui->notelabel_19);
+    notelabels.append(ui->notelabel_20);
+    notelabels.append(ui->notelabel_21);
+    notelabels.append(ui->notelabel_22);
+    notelabels.append(ui->notelabel_23);
+    notelabels.append(ui->notelabel_24);
+    notelabels.append(ui->notelabel_25);
+    notelabels.append(ui->notelabel_26);
+
 }
 
 MainWindow::~MainWindow()
@@ -16,10 +46,18 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::updatePiano(int * noteArray, int n){
+    for(int i = 0; i < 26; i++){
+        notelabels.at(i)->setLineWidth(1);
+    }
+
+    for(int i = 0; i < n; i++){
+        notelabels.at(noteArray[i])->setLineWidth(3);
+    }
+}
+
 void MainWindow::on_chordsButton_clicked()
 {
-    QString notes[12] = {"A", "A#/Bb", "B", "C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb", "G", "G#/Ab"};
-
     QString s = ui->ChordsNoteComboBox->currentText();
     int cts = ui->ChordsTypeComboBox->currentIndex();
     QString o;
@@ -45,28 +83,52 @@ void MainWindow::on_chordsButton_clicked()
             chordLength = 4;
             break;
         case 2:
-            chord = maj11(noteInt);
+            chord = maj9(noteInt);
             chordLength = 5;
             break;
         case 3:
-            chord = maj13(noteInt);
+            chord = maj11(noteInt);
             chordLength = 6;
             break;
         case 4:
+            chord = maj13(noteInt);
+            chordLength = 7;
+            break;
+        case 5:
             chord = minor(noteInt);
             chordLength = 3;
             break;
-        case 5:
+        case 6:
             chord = min7(noteInt);
             chordLength = 4;
             break;
-        case 6:
-            chord = min11(noteInt);
+        case 7:
+            chord = min9(noteInt);
             chordLength = 5;
             break;
-        case 7:
-            chord = min13(noteInt);
+        case 8:
+            chord = min11(noteInt);
             chordLength = 6;
+            break;
+        case 9:
+            chord = min13(noteInt);
+            chordLength = 7;
+            break;
+        case 10:
+            chord = d7(noteInt);
+            chordLength = 4;
+            break;
+        case 11:
+            chord = d9(noteInt);
+            chordLength = 5;
+            break;
+        case 12:
+            chord = d11(noteInt);
+            chordLength = 6;
+            break;
+        case 13:
+            chord = d13(noteInt);
+            chordLength = 7;
             break;
         default:
             chord = major(0);
@@ -79,12 +141,11 @@ void MainWindow::on_chordsButton_clicked()
     }
 
     ui->ChordsOutputLabel->setText(o);
+    updatePiano(chord, chordLength);
 }
 
 void MainWindow::on_scalesButton_clicked()
 {
-    QString notes[12] = {"A", "A#/Bb", "B", "C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb", "G", "G#/Ab"};
-
     QString s = ui->ScaleNoteComboBox->currentText();
     int cts = ui->ScaleTypeComboBox->currentIndex();
     QString o;
