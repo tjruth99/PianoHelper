@@ -134,6 +134,26 @@ void MainWindow::on_chordsButton_clicked()
             chord = d13(noteInt);
             chordLength = 7;
             break;
+        case 14:
+            chord = dim(noteInt);
+            chordLength = 3;
+            break;
+        case 15:
+            chord = dim7(noteInt);
+            chordLength = 4;
+            break;
+        case 16:
+            chord = min9b5(noteInt);
+            chordLength = 5;
+            break;
+        case 17:
+            chord = min11b5(noteInt);
+            chordLength = 6;
+            break;
+        case 18:
+            chord = min13b5(noteInt);
+            chordLength = 7;
+            break;
         default:
             chord = major(0);
     }
@@ -197,4 +217,6 @@ void MainWindow::on_scalesButton_clicked()
     }
 
     ui->ScaleOutputLabel->setText(o);
+
+    updatePiano(scale, 7);
 }

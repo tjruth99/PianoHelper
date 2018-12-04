@@ -26,7 +26,12 @@
 		d11		major + minT + majT + minT					(C, E, G, A#, D, F)
 		d13		major + minT + majT + minT + majT			(C, E, G, A#, D, F, A)
 
-	(Add Diminished Chords)
+        dim     (root, minT, minT)                          (B, D, F)
+        dim7    (root, minT, minT, minT)                    (B, D, F, A)
+        min9b5  (root, minT, minT, minT, majT)              (B, D, F, A, C#)
+        min11b5 (root, minT, minT, minT, majT, minT)
+        min13b5 (root, minT, minT, minT, majT, minT, minT)
+
 	(Add Augmented Chords)
 	(Add Suspended Chords)
 
@@ -160,4 +165,50 @@ int* d13(int root) {
 	notes[6] = (notes[5] + 4) % 12;
 
 	return notes;
+}
+
+int* dim(int root){
+    int * notes = new int[3];
+
+    notes[0] = root;
+    notes[1] = (root + 3) % 12;
+    notes[2] = (root + 6) % 12;
+
+    return notes;
+}
+
+int* dim7(int root){
+    int * notes = new int[4];
+
+    notes = dim(root);
+    notes[3] = (notes[2] + 3) % 12;
+
+    return notes;
+}
+
+int* min9b5(int root){
+    int * notes = new int[5];
+
+    notes = dim7(root);
+    notes[4] = (notes[3] + 4) % 12;
+
+    return notes;
+}
+
+int* min11b5(int root){
+    int * notes = new int[6];
+
+    notes = min9b5(root);
+    notes[5] = (notes[4] + 3) % 12;
+
+    return notes;
+}
+
+int* min13b5(int root){
+    int * notes = new int[7];
+
+    notes = min11b5(root);
+    notes[6] = (notes[5] + 3) % 12;
+
+    return notes;
 }

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>529</width>
-    <height>338</height>
+    <height>345</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>160</y>
       <width>521</width>
       <height>151</height>
@@ -120,6 +120,31 @@
       <item>
        <property name="text">
         <string>d13</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Diminished</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Dim7</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Min9(b5)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Min11(b5)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Min13(b5)</string>
        </property>
       </item>
      </widget>
@@ -388,7 +413,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: blue; font-color: white;</string>
+     <string notr="true">background-color: #3385ff</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -425,7 +450,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: blue; font-color: white;</string>
+     <string notr="true">background-color: #3385ff</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -459,7 +484,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: blue; font-color: white;</string>
+     <string notr="true">background-color: #3385ff</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -496,7 +521,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: blue; font-color: white;</string>
+     <string notr="true">background-color: #3385ff</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -533,7 +558,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: blue; font-color: white;</string>
+     <string notr="true">background-color: #3385ff</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -570,7 +595,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: blue; font-color: white;</string>
+     <string notr="true">background-color: #3385ff</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -607,7 +632,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: blue; font-color: white;</string>
+     <string notr="true">background-color: #3385ff</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -644,7 +669,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: blue; font-color: white;</string>
+     <string notr="true">background-color: #3385ff</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -681,7 +706,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: blue; font-color: white;</string>
+     <string notr="true">background-color: #3385ff</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -718,7 +743,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: blue; font-color: white;</string>
+     <string notr="true">background-color: #3385ff</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -755,7 +780,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: blue; font-color: white;</string>
+     <string notr="true">background-color: #3385ff</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -792,7 +817,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: blue; font-color: white;</string>
+     <string notr="true">background-color: #3385ff</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -829,7 +854,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: blue; font-color: white;</string>
+     <string notr="true">background-color: #3385ff</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -866,7 +891,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: blue; font-color: white;</string>
+     <string notr="true">background-color: #3385ff</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -903,7 +928,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: blue; font-color: white;</string>
+     <string notr="true">background-color: #3385ff</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -940,7 +965,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: blue; font-color: white;</string>
+     <string notr="true">background-color: #3385ff</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -974,7 +999,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: blue; font-color: white;</string>
+     <string notr="true">background-color: #3385ff</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1008,7 +1033,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: blue; font-color: white;</string>
+     <string notr="true">background-color: #3385ff</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1042,7 +1067,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: blue; font-color: white;</string>
+     <string notr="true">background-color: #3385ff</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1076,7 +1101,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: blue; font-color: white;</string>
+     <string notr="true">background-color: #3385ff</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1110,7 +1135,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: blue; font-color: white;</string>
+     <string notr="true">background-color: #3385ff</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1144,7 +1169,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: blue; font-color: white;</string>
+     <string notr="true">background-color: #3385ff</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1178,7 +1203,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: blue; font-color: white;</string>
+     <string notr="true">background-color: #3385ff</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1212,7 +1237,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: blue; font-color: white;</string>
+     <string notr="true">background-color: #3385ff</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1246,7 +1271,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: blue; font-color: white;</string>
+     <string notr="true">background-color: #3385ff</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1280,7 +1305,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: blue; font-color: white;</string>
+     <string notr="true">background-color: #3385ff</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1317,7 +1342,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: blue; font-color: white;</string>
+     <string notr="true">background-color: #3385ff</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1372,7 +1397,7 @@
      <enum>Qt::AutoText</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="notelabel_27">
+   <widget class="QLabel" name="piano_14">
     <property name="geometry">
      <rect>
       <x>270</x>
@@ -1406,7 +1431,7 @@
      <enum>Qt::AutoText</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="notelabel_28">
+   <widget class="QLabel" name="piano_24">
     <property name="geometry">
      <rect>
       <x>450</x>
@@ -1440,7 +1465,7 @@
      <enum>Qt::AutoText</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="notelabel_29">
+   <widget class="QLabel" name="piano_17">
     <property name="geometry">
      <rect>
       <x>330</x>
@@ -1474,7 +1499,7 @@
      <enum>Qt::AutoText</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="notelabel_30">
+   <widget class="QLabel" name="piano_09">
     <property name="geometry">
      <rect>
       <x>180</x>
@@ -1508,7 +1533,7 @@
      <enum>Qt::AutoText</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="notelabel_31">
+   <widget class="QLabel" name="piano_16">
     <property name="geometry">
      <rect>
       <x>300</x>
@@ -1542,7 +1567,7 @@
      <enum>Qt::AutoText</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="notelabel_32">
+   <widget class="QLabel" name="piano_18">
     <property name="geometry">
      <rect>
       <x>350</x>
@@ -1576,7 +1601,7 @@
      <enum>Qt::AutoText</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="notelabel_9">
+   <widget class="QLabel" name="piano_08">
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -1610,7 +1635,7 @@
      <enum>Qt::AutoText</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="notelabel_33">
+   <widget class="QLabel" name="piano_10">
     <property name="geometry">
      <rect>
       <x>200</x>
@@ -1644,7 +1669,7 @@
      <enum>Qt::AutoText</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="notelabel_6">
+   <widget class="QLabel" name="piano_05">
     <property name="geometry">
      <rect>
       <x>120</x>
@@ -1712,7 +1737,7 @@
      <enum>Qt::AutoText</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="notelabel_3">
+   <widget class="QLabel" name="piano_02">
     <property name="geometry">
      <rect>
       <x>60</x>
@@ -1746,7 +1771,7 @@
      <enum>Qt::AutoText</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="notelabel_4">
+   <widget class="QLabel" name="piano_03">
     <property name="geometry">
      <rect>
       <x>80</x>
@@ -1780,7 +1805,7 @@
      <enum>Qt::AutoText</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="notelabel_35">
+   <widget class="QLabel" name="piano_26">
     <property name="geometry">
      <rect>
       <x>480</x>
@@ -1814,7 +1839,7 @@
      <enum>Qt::AutoText</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="notelabel_36">
+   <widget class="QLabel" name="piano_11">
     <property name="geometry">
      <rect>
       <x>210</x>
@@ -1848,7 +1873,7 @@
      <enum>Qt::AutoText</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="notelabel_5">
+   <widget class="QLabel" name="piano_04">
     <property name="geometry">
      <rect>
       <x>90</x>
@@ -1882,7 +1907,7 @@
      <enum>Qt::AutoText</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="notelabel_7">
+   <widget class="QLabel" name="piano_06">
     <property name="geometry">
      <rect>
       <x>140</x>
@@ -1916,7 +1941,7 @@
      <enum>Qt::AutoText</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="notelabel_37">
+   <widget class="QLabel" name="piano_13">
     <property name="geometry">
      <rect>
       <x>260</x>
@@ -1950,7 +1975,7 @@
      <enum>Qt::AutoText</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="notelabel_38">
+   <widget class="QLabel" name="piano_12">
     <property name="geometry">
      <rect>
       <x>240</x>
@@ -1984,7 +2009,7 @@
      <enum>Qt::AutoText</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="notelabel_39">
+   <widget class="QLabel" name="piano_23">
     <property name="geometry">
      <rect>
       <x>420</x>
@@ -2018,7 +2043,7 @@
      <enum>Qt::AutoText</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="notelabel_40">
+   <widget class="QLabel" name="piano_25">
     <property name="geometry">
      <rect>
       <x>470</x>
@@ -2052,7 +2077,7 @@
      <enum>Qt::AutoText</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="notelabel_41">
+   <widget class="QLabel" name="piano_21">
     <property name="geometry">
      <rect>
       <x>390</x>
@@ -2086,7 +2111,7 @@
      <enum>Qt::AutoText</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="notelabel_42">
+   <widget class="QLabel" name="piano_19">
     <property name="geometry">
      <rect>
       <x>360</x>
@@ -2120,7 +2145,7 @@
      <enum>Qt::AutoText</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="notelabel_8">
+   <widget class="QLabel" name="piano_07">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -2154,7 +2179,7 @@
      <enum>Qt::AutoText</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="notelabel_43">
+   <widget class="QLabel" name="piano_15">
     <property name="geometry">
      <rect>
       <x>290</x>
@@ -2188,7 +2213,7 @@
      <enum>Qt::AutoText</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="notelabel_1">
+   <widget class="QLabel" name="piano_00">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -2222,7 +2247,7 @@
      <enum>Qt::AutoText</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="notelabel_44">
+   <widget class="QLabel" name="piano_20">
     <property name="geometry">
      <rect>
       <x>380</x>
@@ -2256,7 +2281,7 @@
      <enum>Qt::AutoText</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="notelabel_45">
+   <widget class="QLabel" name="piano_01">
     <property name="geometry">
      <rect>
       <x>50</x>
@@ -2290,7 +2315,7 @@
      <enum>Qt::AutoText</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="notelabel_46">
+   <widget class="QLabel" name="piano_22">
     <property name="geometry">
      <rect>
       <x>410</x>
@@ -2326,23 +2351,23 @@
    </widget>
    <zorder>tabWidget</zorder>
    <zorder>notelabel_2</zorder>
-   <zorder>notelabel_27</zorder>
-   <zorder>notelabel_28</zorder>
-   <zorder>notelabel_29</zorder>
-   <zorder>notelabel_30</zorder>
-   <zorder>notelabel_31</zorder>
-   <zorder>notelabel_6</zorder>
+   <zorder>piano_14</zorder>
+   <zorder>piano_24</zorder>
+   <zorder>piano_17</zorder>
+   <zorder>piano_09</zorder>
+   <zorder>piano_16</zorder>
+   <zorder>piano_05</zorder>
    <zorder>notelabel_34</zorder>
-   <zorder>notelabel_3</zorder>
-   <zorder>notelabel_35</zorder>
-   <zorder>notelabel_36</zorder>
-   <zorder>notelabel_5</zorder>
-   <zorder>notelabel_38</zorder>
-   <zorder>notelabel_39</zorder>
-   <zorder>notelabel_41</zorder>
-   <zorder>notelabel_42</zorder>
-   <zorder>notelabel_8</zorder>
-   <zorder>notelabel_1</zorder>
+   <zorder>piano_02</zorder>
+   <zorder>piano_26</zorder>
+   <zorder>piano_11</zorder>
+   <zorder>piano_04</zorder>
+   <zorder>piano_12</zorder>
+   <zorder>piano_23</zorder>
+   <zorder>piano_21</zorder>
+   <zorder>piano_19</zorder>
+   <zorder>piano_07</zorder>
+   <zorder>piano_00</zorder>
    <zorder>notelabel_00</zorder>
    <zorder>notelabel_09</zorder>
    <zorder>notelabel_14</zorder>
@@ -2359,17 +2384,17 @@
    <zorder>notelabel_17</zorder>
    <zorder>notelabel_07</zorder>
    <zorder>notelabel_02</zorder>
-   <zorder>notelabel_33</zorder>
-   <zorder>notelabel_4</zorder>
-   <zorder>notelabel_43</zorder>
-   <zorder>notelabel_46</zorder>
-   <zorder>notelabel_40</zorder>
-   <zorder>notelabel_32</zorder>
-   <zorder>notelabel_45</zorder>
-   <zorder>notelabel_9</zorder>
-   <zorder>notelabel_7</zorder>
-   <zorder>notelabel_44</zorder>
-   <zorder>notelabel_37</zorder>
+   <zorder>piano_10</zorder>
+   <zorder>piano_03</zorder>
+   <zorder>piano_15</zorder>
+   <zorder>piano_22</zorder>
+   <zorder>piano_25</zorder>
+   <zorder>piano_18</zorder>
+   <zorder>piano_01</zorder>
+   <zorder>piano_08</zorder>
+   <zorder>piano_06</zorder>
+   <zorder>piano_20</zorder>
+   <zorder>piano_13</zorder>
    <zorder>notelabel_06</zorder>
    <zorder>notelabel_03</zorder>
    <zorder>notelabel_10</zorder>
