@@ -39,6 +39,10 @@ MainWindow::MainWindow(QWidget *parent) :
     notelabels.append(ui->notelabel_25);
     notelabels.append(ui->notelabel_26);
 
+    for(int i = 0; i < 27; i++){
+        notelabels.at(i)->setVisible(false);
+    }
+
 }
 
 MainWindow::~MainWindow()
@@ -47,12 +51,12 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::updatePiano(int * noteArray, int n){
-    for(int i = 0; i < 26; i++){
-        notelabels.at(i)->setLineWidth(1);
+    for(int i = 0; i < 27; i++){
+        notelabels.at(i)->setVisible(false);
     }
 
     for(int i = 0; i < n; i++){
-        notelabels.at(noteArray[i])->setLineWidth(3);
+        notelabels.at(noteArray[i])->setVisible(true);
     }
 }
 

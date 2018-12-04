@@ -23,7 +23,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    QString notes[12] = {"A", "A#/Bb", "B", "C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb", "G", "G#/Ab"};
+    QString notes[12] = {"C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb", "G", "G#/Ab", "A", "A#/Bb", "B"};
     QVector<QLabel*> notelabels;
 
     void updatePiano(int * noteArray, int n);
