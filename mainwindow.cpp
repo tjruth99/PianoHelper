@@ -51,13 +51,26 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::updatePiano(int * noteArray, int n){
+    int last = noteArray[0];
+    int curNote;
+
     for(int i = 0; i < 27; i++){
         notelabels.at(i)->setVisible(false);
     }
 
     for(int i = 0; i < n; i++){
-        notelabels.at(noteArray[i])->setVisible(true);
+
+        curNote = noteArray[i];
+        if(curNote < last)
+            curNote += 12;
+
+        last = curNote;
+        notelabels.at(curNote)->setVisible(true);
+
     }
+
+    currentPianoNotes = noteArray;
+    currentPianoNotesN = n;
 }
 
 void MainWindow::on_chordsButton_clicked()

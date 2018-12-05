@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>529</width>
-    <height>345</height>
+    <width>521</width>
+    <height>343</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -403,7 +403,7 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>20</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -440,7 +440,7 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>60</x>
+      <x>50</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -474,7 +474,7 @@
    <widget class="QLabel" name="notelabel_01">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>40</x>
       <y>20</y>
       <width>21</width>
       <height>71</height>
@@ -511,7 +511,7 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>110</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -548,7 +548,7 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>90</x>
+      <x>80</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -585,7 +585,7 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>180</x>
+      <x>170</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -622,7 +622,7 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>210</x>
+      <x>200</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -659,7 +659,7 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>230</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -696,7 +696,7 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>390</x>
+      <x>380</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -733,7 +733,7 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>360</x>
+      <x>350</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -770,7 +770,7 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>300</x>
+      <x>290</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -807,7 +807,7 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>450</x>
+      <x>440</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -844,7 +844,7 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>420</x>
+      <x>410</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -881,7 +881,7 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>330</x>
+      <x>320</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -918,7 +918,7 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>480</x>
+      <x>470</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -955,7 +955,7 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>270</x>
+      <x>260</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -989,7 +989,7 @@
    <widget class="QLabel" name="notelabel_03">
     <property name="geometry">
      <rect>
-      <x>80</x>
+      <x>70</x>
       <y>20</y>
       <width>21</width>
       <height>71</height>
@@ -1023,7 +1023,7 @@
    <widget class="QLabel" name="notelabel_06">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>130</x>
       <y>20</y>
       <width>21</width>
       <height>71</height>
@@ -1057,7 +1057,7 @@
    <widget class="QLabel" name="notelabel_08">
     <property name="geometry">
      <rect>
-      <x>170</x>
+      <x>160</x>
       <y>20</y>
       <width>21</width>
       <height>71</height>
@@ -1091,7 +1091,7 @@
    <widget class="QLabel" name="notelabel_10">
     <property name="geometry">
      <rect>
-      <x>200</x>
+      <x>190</x>
       <y>20</y>
       <width>21</width>
       <height>71</height>
@@ -1125,7 +1125,7 @@
    <widget class="QLabel" name="notelabel_13">
     <property name="geometry">
      <rect>
-      <x>260</x>
+      <x>250</x>
       <y>20</y>
       <width>21</width>
       <height>71</height>
@@ -1159,7 +1159,7 @@
    <widget class="QLabel" name="notelabel_15">
     <property name="geometry">
      <rect>
-      <x>290</x>
+      <x>280</x>
       <y>20</y>
       <width>21</width>
       <height>71</height>
@@ -1193,7 +1193,7 @@
    <widget class="QLabel" name="notelabel_22">
     <property name="geometry">
      <rect>
-      <x>410</x>
+      <x>400</x>
       <y>20</y>
       <width>21</width>
       <height>71</height>
@@ -1227,7 +1227,7 @@
    <widget class="QLabel" name="notelabel_18">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>340</x>
       <y>20</y>
       <width>21</width>
       <height>71</height>
@@ -1261,7 +1261,7 @@
    <widget class="QLabel" name="notelabel_20">
     <property name="geometry">
      <rect>
-      <x>380</x>
+      <x>370</x>
       <y>20</y>
       <width>21</width>
       <height>71</height>
@@ -1295,7 +1295,7 @@
    <widget class="QLabel" name="notelabel_25">
     <property name="geometry">
      <rect>
-      <x>470</x>
+      <x>460</x>
       <y>20</y>
       <width>21</width>
       <height>71</height>
@@ -1332,7 +1332,7 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>140</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -1366,7 +1366,7 @@
    <widget class="QLabel" name="notelabel_2">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>40</x>
       <y>20</y>
       <width>21</width>
       <height>71</height>
@@ -1400,7 +1400,7 @@
    <widget class="QLabel" name="piano_14">
     <property name="geometry">
      <rect>
-      <x>270</x>
+      <x>260</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -1434,7 +1434,7 @@
    <widget class="QLabel" name="piano_24">
     <property name="geometry">
      <rect>
-      <x>450</x>
+      <x>440</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -1468,7 +1468,7 @@
    <widget class="QLabel" name="piano_17">
     <property name="geometry">
      <rect>
-      <x>330</x>
+      <x>320</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -1502,7 +1502,7 @@
    <widget class="QLabel" name="piano_09">
     <property name="geometry">
      <rect>
-      <x>180</x>
+      <x>170</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -1536,7 +1536,7 @@
    <widget class="QLabel" name="piano_16">
     <property name="geometry">
      <rect>
-      <x>300</x>
+      <x>290</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -1570,7 +1570,7 @@
    <widget class="QLabel" name="piano_18">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>340</x>
       <y>20</y>
       <width>21</width>
       <height>71</height>
@@ -1580,7 +1580,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: black; font-color: white;</string>
+     <string notr="true">background-color: black</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1604,7 +1604,7 @@
    <widget class="QLabel" name="piano_08">
     <property name="geometry">
      <rect>
-      <x>170</x>
+      <x>160</x>
       <y>20</y>
       <width>21</width>
       <height>71</height>
@@ -1614,7 +1614,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: black; font-color: white;</string>
+     <string notr="true">background-color: black</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1638,7 +1638,7 @@
    <widget class="QLabel" name="piano_10">
     <property name="geometry">
      <rect>
-      <x>200</x>
+      <x>190</x>
       <y>20</y>
       <width>21</width>
       <height>71</height>
@@ -1648,7 +1648,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: black; font-color: white;</string>
+     <string notr="true">background-color: black</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1672,7 +1672,7 @@
    <widget class="QLabel" name="piano_05">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>110</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -1706,7 +1706,7 @@
    <widget class="QLabel" name="notelabel_34">
     <property name="geometry">
      <rect>
-      <x>410</x>
+      <x>400</x>
       <y>20</y>
       <width>21</width>
       <height>71</height>
@@ -1740,7 +1740,7 @@
    <widget class="QLabel" name="piano_02">
     <property name="geometry">
      <rect>
-      <x>60</x>
+      <x>50</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -1774,7 +1774,7 @@
    <widget class="QLabel" name="piano_03">
     <property name="geometry">
      <rect>
-      <x>80</x>
+      <x>70</x>
       <y>20</y>
       <width>21</width>
       <height>71</height>
@@ -1784,7 +1784,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: black; font-color: white;</string>
+     <string notr="true">background-color: black</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1808,7 +1808,7 @@
    <widget class="QLabel" name="piano_26">
     <property name="geometry">
      <rect>
-      <x>480</x>
+      <x>470</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -1842,7 +1842,7 @@
    <widget class="QLabel" name="piano_11">
     <property name="geometry">
      <rect>
-      <x>210</x>
+      <x>200</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -1876,7 +1876,7 @@
    <widget class="QLabel" name="piano_04">
     <property name="geometry">
      <rect>
-      <x>90</x>
+      <x>80</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -1910,7 +1910,7 @@
    <widget class="QLabel" name="piano_06">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>130</x>
       <y>20</y>
       <width>21</width>
       <height>71</height>
@@ -1920,7 +1920,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: black; font-color: white;</string>
+     <string notr="true">background-color: black</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1944,7 +1944,7 @@
    <widget class="QLabel" name="piano_13">
     <property name="geometry">
      <rect>
-      <x>260</x>
+      <x>250</x>
       <y>20</y>
       <width>21</width>
       <height>71</height>
@@ -1954,7 +1954,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: black; font-color: white;</string>
+     <string notr="true">background-color: black</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -1978,7 +1978,7 @@
    <widget class="QLabel" name="piano_12">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>230</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -2012,7 +2012,7 @@
    <widget class="QLabel" name="piano_23">
     <property name="geometry">
      <rect>
-      <x>420</x>
+      <x>410</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -2046,7 +2046,7 @@
    <widget class="QLabel" name="piano_25">
     <property name="geometry">
      <rect>
-      <x>470</x>
+      <x>460</x>
       <y>20</y>
       <width>21</width>
       <height>71</height>
@@ -2056,7 +2056,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: black; font-color: white;</string>
+     <string notr="true">background-color: black</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2080,7 +2080,7 @@
    <widget class="QLabel" name="piano_21">
     <property name="geometry">
      <rect>
-      <x>390</x>
+      <x>380</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -2114,7 +2114,7 @@
    <widget class="QLabel" name="piano_19">
     <property name="geometry">
      <rect>
-      <x>360</x>
+      <x>350</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -2148,7 +2148,7 @@
    <widget class="QLabel" name="piano_07">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>140</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -2182,7 +2182,7 @@
    <widget class="QLabel" name="piano_15">
     <property name="geometry">
      <rect>
-      <x>290</x>
+      <x>280</x>
       <y>20</y>
       <width>21</width>
       <height>71</height>
@@ -2192,7 +2192,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: black; font-color: white;</string>
+     <string notr="true">background-color: black</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2216,7 +2216,7 @@
    <widget class="QLabel" name="piano_00">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>20</x>
       <y>20</y>
       <width>31</width>
       <height>121</height>
@@ -2250,7 +2250,7 @@
    <widget class="QLabel" name="piano_20">
     <property name="geometry">
      <rect>
-      <x>380</x>
+      <x>370</x>
       <y>20</y>
       <width>21</width>
       <height>71</height>
@@ -2260,7 +2260,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: black; font-color: white;</string>
+     <string notr="true">background-color: black</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2284,7 +2284,7 @@
    <widget class="QLabel" name="piano_01">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>40</x>
       <y>20</y>
       <width>21</width>
       <height>71</height>
@@ -2294,7 +2294,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: black; font-color: white;</string>
+     <string notr="true">background-color: black</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2318,7 +2318,7 @@
    <widget class="QLabel" name="piano_22">
     <property name="geometry">
      <rect>
-      <x>410</x>
+      <x>400</x>
       <y>20</y>
       <width>21</width>
       <height>71</height>
@@ -2328,7 +2328,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: black; font-color: white;</string>
+     <string notr="true">background-color: black</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>

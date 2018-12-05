@@ -25,6 +25,8 @@ private:
     Ui::MainWindow *ui;
     QString notes[12] = {"C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb", "G", "G#/Ab", "A", "A#/Bb", "B"};
     QVector<QLabel*> notelabels;
+    int * currentPianoNotes;
+    int currentPianoNotesN;
 
     void updatePiano(int * noteArray, int n);
 };
