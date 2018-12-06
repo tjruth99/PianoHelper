@@ -79,8 +79,13 @@ int* maj11(int root) {
 int* maj13(int root) {
 	int * notes = new int[7];
 
-	notes = maj11(root);
-	notes[6] = (notes[5] + 4) % 12;
+    notes[0] = root;
+    notes[1] = (root + 4) % 12;
+    notes[2] = (notes[1] + 3) % 12;
+    notes[3] = (notes[2] + 4) % 12;
+    notes[4] = (notes[3] + 3) % 12;
+    notes[5] = (notes[4] + 3) % 12;
+    notes[6] = (notes[5] + 4) % 12;
 
 	return notes;
 }
@@ -125,8 +130,13 @@ int* min11(int root) {
 int* min13(int root) {
 	int * notes = new int[7];
 
-	notes = min11(root);
-	notes[6] = (notes[5] + 3) % 12;
+    notes[0] = root;
+    notes[1] = (root + 3) % 12;
+    notes[2] = (notes[1] + 4) % 12;
+    notes[3] = (notes[2] + 3) % 12;
+    notes[4] = (notes[3] + 4) % 12;
+    notes[5] = (notes[4] + 3) % 12;
+    notes[6] = (notes[5] + 3) % 12;
 
 	return notes;
 }
