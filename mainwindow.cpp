@@ -187,6 +187,7 @@ void MainWindow::on_scalesButton_clicked()
     int cts = ui->ScaleTypeComboBox->currentIndex();
     QString o;
     int noteInt = -1;
+    int scaleLength = 8;
 
     for(int i = 0; i < 12; i++){
         if(QString::compare(notes[i], s) == 0){
@@ -219,17 +220,43 @@ void MainWindow::on_scalesButton_clicked()
         case 6:
             scale = locrian(noteInt);
             break;
+        case 7:
+            scale = majPentatonic(noteInt);
+            scaleLength = 5;
+            break;
+        case 8:
+            scale = minPentatonic(noteInt);
+            scaleLength = 5;
+            break;
+        case 9:
+            scale = melodicMinor(noteInt);
+            break;
+        case 10:
+            scale = harmonicMinor(noteInt);
+            break;
+        case 11:
+            scale = bebopDom(noteInt);
+            scaleLength = 9;
+            break;
+        case 12:
+            scale = bebopMin(noteInt);
+            scaleLength = 9;
+            break;
+        case 13:
+            scale = bebopMaj(noteInt);
+            scaleLength = 9;
+            break;
         default:
             scale = ionian(0);
     }
 
-    for(int i = 0; i < 7; i++){
+    for(int i = 0; i < scaleLength; i++){
        o.append(notes[scale[i]]);
-       if(i != 6 )
+       if(i != scaleLength - 1 )
             o.append(", ");
     }
 
     ui->ScaleOutputLabel->setText(o);
 
-    updatePiano(scale, 7);
+    updatePiano(scale, scaleLength);
 }

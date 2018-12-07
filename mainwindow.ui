@@ -46,9 +46,9 @@
      <widget class="QComboBox" name="ChordsTypeComboBox">
       <property name="geometry">
        <rect>
-        <x>200</x>
+        <x>160</x>
         <y>80</y>
-        <width>121</width>
+        <width>201</width>
         <height>31</height>
        </rect>
       </property>
@@ -248,9 +248,9 @@
      <widget class="QComboBox" name="ScaleTypeComboBox">
       <property name="geometry">
        <rect>
-        <x>200</x>
+        <x>160</x>
         <y>80</y>
-        <width>121</width>
+        <width>201</width>
         <height>31</height>
        </rect>
       </property>
@@ -287,6 +287,41 @@
       <item>
        <property name="text">
         <string>Locrian</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Major Pentatonic</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Minor Pentatonic</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Melodic Minor (Ascending)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Harmonic Minor</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bebop Dominant</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bebop Minor</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bebop Major</string>
        </property>
       </item>
      </widget>
