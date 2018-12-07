@@ -17,11 +17,19 @@
 		Aeolian:	root, WT, HT, WT, WT, HT, WT, WT	(A B C D E F G A)
 		Locrian:	root, HT, WT, WT, HT, WT, WT, WT	(B C D E F G A B)
 
-	(Add Pentatonic Scales)
-	(Add Diminished Scales)
-	(Add Phrygian Dominant Scales)
-	(Add Bebop Sclaes)
-	(Add Melodic Minor Scale)
+    Pentatonic Scales:
+        Major       root, 2nd, 3rd, 5th, 6th            (C D E G A)
+        Minor       root, 3rd, 4th, 5th, 7th`           (A C D E G)
+
+    Other Scales:
+        Melodic Minor (Ascending):  root, WT, HT, WT, WT, WT, WT, HT
+                                    (A, B, C, D, E, F#, G# A)
+        Harmonic Minor:     root, WT, HT, WT, WT, HT, WT+HT, WT    (A B C D E F G# A)
+
+    Bebop Scales:
+        Bebop Dominant:     root, WT, WT, HT, WT, WT, HT, HT, HT    (C D E F G A Bb B C)
+        Bebop Minor:        root, WT, HT, HT, HT, WT, WT, HT, WT    (C D Eb E F G A Bb C)
+        Bebop Major:        root, WT, WT, HT, WT, HT, HT, WT, HT    (C D E F G Ab A B C)
 */
 #include "Scales.h"
 
@@ -128,4 +136,106 @@ int* locrian(int root) {
 	scale[7] = (scale[6] + 2) % 12;
 
 	return scale;
+}
+
+int* majPentatonic(int root){
+    int * scale = new int[5];
+
+    scale[0] = root;
+    scale[1] = (root + 2) % 12;
+    scale[2] = (scale[1] + 2) % 12;
+    scale[3] = (scale[2] + 3) % 12;
+    scale[4] = (scale[3] + 2) % 12;
+
+    return scale;
+}
+
+int* minPentatonic(int root){
+    int * scale = new int[5];
+
+    scale[0] = root;
+    scale[1] = (root + 3) % 12;
+    scale[2] = (scale[1] + 2) % 12;
+    scale[3] = (scale[2] + 2) % 12;
+    scale[4] = (scale[3] + 3) % 12;
+
+    return scale;
+}
+
+int* melodicMinor(int root){
+    int * scale = new int[8];
+
+    scale[0] = root;
+    scale[1] = (root + 2) % 12;
+    scale[2] = (scale[1] + 1) % 12;
+    scale[3] = (scale[2] + 2) % 12;
+    scale[4] = (scale[3] + 2) % 12;
+    scale[5] = (scale[4] + 2) % 12;
+    scale[6] = (scale[5] + 2) % 12;
+    scale[7] = (scale[6] + 1) % 12;
+
+    return scale;
+}
+
+int* harmonicMinor(int root){
+    int * scale = new int[8];
+
+    scale[0] = root;
+    scale[1] = (root + 2) % 12;
+    scale[2] = (scale[1] + 1) % 12;
+    scale[3] = (scale[2] + 2) % 12;
+    scale[4] = (scale[3] + 2) % 12;
+    scale[5] = (scale[4] + 1) % 12;
+    scale[6] = (scale[5] + 3) % 12;
+    scale[7] = (scale[6] + 1) % 12;
+
+    return scale;
+}
+
+int* bebopDom(int root){
+    int * scale = new int[9];
+
+    scale[0] = root;
+    scale[1] = (root + 2) % 12;
+    scale[2] = (scale[1] + 2) % 12;
+    scale[3] = (scale[2] + 1) % 12;
+    scale[4] = (scale[3] + 2) % 12;
+    scale[5] = (scale[4] + 2) % 12;
+    scale[6] = (scale[5] + 1) % 12;
+    scale[7] = (scale[6] + 1) % 12;
+    scale[8] = (scale[7] + 2) % 12;
+
+    return scale;
+}
+
+int* bebopMin(int root){
+    int * scale = new int[9];
+
+    scale[0] = root;
+    scale[1] = (root + 2) % 12;
+    scale[2] = (scale[1] + 1) % 12;
+    scale[3] = (scale[2] + 1) % 12;
+    scale[4] = (scale[3] + 1) % 12;
+    scale[5] = (scale[4] + 2) % 12;
+    scale[6] = (scale[5] + 2) % 12;
+    scale[7] = (scale[6] + 1) % 12;
+    scale[8] = (scale[7] + 2) % 12;
+
+    return scale;
+}
+
+int* bebopMaj(int root){
+    int * scale = new int[9];
+
+    scale[0] = root;
+    scale[1] = (root + 2) % 12;
+    scale[2] = (scale[1] + 2) % 12;
+    scale[3] = (scale[2] + 1) % 12;
+    scale[4] = (scale[3] + 2) % 12;
+    scale[5] = (scale[4] + 1) % 12;
+    scale[6] = (scale[5] + 1) % 12;
+    scale[7] = (scale[6] + 2) % 12;
+    scale[8] = (scale[7] + 1) % 12;
+
+    return scale;
 }
