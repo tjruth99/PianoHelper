@@ -239,3 +239,62 @@ int* bebopMaj(int root){
 
     return scale;
 }
+
+int * findScale(int noteInt, int cts, int *length){
+    int * scale;
+    *length = 8;
+
+    switch(cts){
+        case 0:
+            scale = ionian(noteInt);
+            break;
+        case 1:
+            scale = dorian(noteInt);
+            break;
+        case 2:
+            scale = phrygian(noteInt);
+            break;
+        case 3:
+            scale = lydian(noteInt);
+            break;
+        case 4:
+            scale = mixolydian(noteInt);
+            break;
+        case 5:
+            scale = aeolian(noteInt);
+            break;
+        case 6:
+            scale = locrian(noteInt);
+            break;
+        case 7:
+            scale = majPentatonic(noteInt);
+            *length = 5;
+            break;
+        case 8:
+            scale = minPentatonic(noteInt);
+            *length = 5;
+            break;
+        case 9:
+            scale = melodicMinor(noteInt);
+            break;
+        case 10:
+            scale = harmonicMinor(noteInt);
+            break;
+        case 11:
+            scale = bebopDom(noteInt);
+            *length = 9;
+            break;
+        case 12:
+            scale = bebopMin(noteInt);
+            *length = 9;
+            break;
+        case 13:
+            scale = bebopMaj(noteInt);
+            *length = 9;
+            break;
+        default:
+            scale = ionian(0);
+    }
+
+    return scale;
+}

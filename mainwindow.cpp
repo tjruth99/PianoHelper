@@ -78,7 +78,7 @@ void MainWindow::on_chordsButton_clicked()
 {
     int chordTypeIndex = ui->ChordsTypeComboBox->currentIndex();
     int noteInt = ui->ChordsNoteComboBox->currentIndex();
-    int chordLength = 0;
+    int chordLength;
 
     int * chord = findChord(noteInt, chordTypeIndex, &chordLength);
 
@@ -96,72 +96,13 @@ void MainWindow::on_chordsButton_clicked()
 
 void MainWindow::on_scalesButton_clicked()
 {
-    QString s = ui->ScaleNoteComboBox->currentText();
-    int cts = ui->ScaleTypeComboBox->currentIndex();
+    int scaleTypeIndex = ui->ScaleTypeComboBox->currentIndex();
+    int noteInt = ui->ScaleNoteComboBox->currentIndex();
+    int scaleLength;
+
+    int * scale = findScale(noteInt, scaleTypeIndex, &scaleLength);
+
     QString o;
-    int noteInt = -1;
-    int scaleLength = 8;
-
-    for(int i = 0; i < 12; i++){
-        if(QString::compare(notes[i], s) == 0){
-            noteInt = i;
-            break;
-        }
-    }
-
-    int * scale;
-
-    switch(cts){
-        case 0:
-            scale = ionian(noteInt);
-            break;
-        case 1:
-            scale = dorian(noteInt);
-            break;
-        case 2:
-            scale = phrygian(noteInt);
-            break;
-        case 3:
-            scale = lydian(noteInt);
-            break;
-        case 4:
-            scale = mixolydian(noteInt);
-            break;
-        case 5:
-            scale = aeolian(noteInt);
-            break;
-        case 6:
-            scale = locrian(noteInt);
-            break;
-        case 7:
-            scale = majPentatonic(noteInt);
-            scaleLength = 5;
-            break;
-        case 8:
-            scale = minPentatonic(noteInt);
-            scaleLength = 5;
-            break;
-        case 9:
-            scale = melodicMinor(noteInt);
-            break;
-        case 10:
-            scale = harmonicMinor(noteInt);
-            break;
-        case 11:
-            scale = bebopDom(noteInt);
-            scaleLength = 9;
-            break;
-        case 12:
-            scale = bebopMin(noteInt);
-            scaleLength = 9;
-            break;
-        case 13:
-            scale = bebopMaj(noteInt);
-            scaleLength = 9;
-            break;
-        default:
-            scale = ionian(0);
-    }
 
     for(int i = 0; i < scaleLength; i++){
        o.append(notes[scale[i]]);
@@ -176,5 +117,13 @@ void MainWindow::on_scalesButton_clicked()
 
 void MainWindow::on_addChordButton_clicked()
 {
+    int chordTypeIndex = ui->ProgTypeComboBox->currentIndex();
+    int noteInt = ui->ProgNoteComboBox->currentIndex();
+    int chordLength;
 
+    int * chord = findChord(noteInt, chordTypeIndex, &chordLength);
+
+    updatePiano(chord, chordLength);
+
+    // Add code to implement chord progression
 }

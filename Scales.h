@@ -33,6 +33,8 @@
         Bebop Major:        root, WT, WT, HT, WT, HT, HT, WT, HT    (C D E F G Ab A B C)
 */
 
+int * findScale(int noteInt, int cts, int *length);
+
 int* ionian(int root);
 int* dorian(int root);
 int* phrygian(int root);

@@ -371,21 +371,6 @@
       </property>
       <item>
        <property name="text">
-        <string>A</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>A#/Bb</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>B</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
         <string>C</string>
        </property>
       </item>
@@ -427,6 +412,21 @@
       <item>
        <property name="text">
         <string>G#/Ab</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>A</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>A#/Bb</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>B</string>
        </property>
       </item>
      </widget>
@@ -446,21 +446,6 @@
       </property>
       <item>
        <property name="text">
-        <string>A</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>A#/Bb</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>B</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
         <string>C</string>
        </property>
       </item>
@@ -502,6 +487,21 @@
       <item>
        <property name="text">
         <string>G#/Ab</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>A</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>A#/Bb</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>B</string>
        </property>
       </item>
      </widget>
