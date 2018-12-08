@@ -222,3 +222,91 @@ int* min13b5(int root){
 
     return notes;
 }
+
+int * findChord(int noteInt, int index, int *length){
+    int * chord;
+
+    switch(index){
+        case 0:
+            chord = major(noteInt);
+            *length = 3;
+            break;
+        case 1:
+            chord = maj7(noteInt);
+            *length = 4;
+            break;
+        case 2:
+            chord = maj9(noteInt);
+            *length = 5;
+            break;
+        case 3:
+            chord = maj11(noteInt);
+            *length = 6;
+            break;
+        case 4:
+            chord = maj13(noteInt);
+            *length = 7;
+            break;
+        case 5:
+            chord = minor(noteInt);
+            *length = 3;
+            break;
+        case 6:
+            chord = min7(noteInt);
+            *length = 4;
+            break;
+        case 7:
+            chord = min9(noteInt);
+            *length = 5;
+            break;
+        case 8:
+            chord = min11(noteInt);
+            *length = 6;
+            break;
+        case 9:
+            chord = min13(noteInt);
+            *length = 7;
+            break;
+        case 10:
+            chord = d7(noteInt);
+            *length = 4;
+            break;
+        case 11:
+            chord = d9(noteInt);
+            *length = 5;
+            break;
+        case 12:
+            chord = d11(noteInt);
+            *length = 6;
+            break;
+        case 13:
+            chord = d13(noteInt);
+            *length = 7;
+            break;
+        case 14:
+            chord = dim(noteInt);
+            *length = 3;
+            break;
+        case 15:
+            chord = dim7(noteInt);
+            *length = 4;
+            break;
+        case 16:
+            chord = min9b5(noteInt);
+            *length = 5;
+            break;
+        case 17:
+            chord = min11b5(noteInt);
+            *length = 6;
+            break;
+        case 18:
+            chord = min13b5(noteInt);
+            *length = 7;
+            break;
+        default:
+            chord = major(0);
+            *length = 3;
+    }
+
+    return chord;
+}

@@ -73,103 +73,16 @@ void MainWindow::updatePiano(int * noteArray, int n){
     currentPianoNotesN = n;
 }
 
+
 void MainWindow::on_chordsButton_clicked()
 {
-    QString s = ui->ChordsNoteComboBox->currentText();
-    int cts = ui->ChordsTypeComboBox->currentIndex();
-    QString o;
-    int noteInt = -1;
+    int chordTypeIndex = ui->ChordsTypeComboBox->currentIndex();
+    int noteInt = ui->ChordsNoteComboBox->currentIndex();
     int chordLength = 0;
 
-    for(int i = 0; i < 12; i++){
-        if(QString::compare(notes[i], s) == 0){
-            noteInt = i;
-            break;
-        }
-    }
+    int * chord = findChord(noteInt, chordTypeIndex, &chordLength);
 
-    int * chord;
-
-    switch(cts){
-        case 0:
-            chord = major(noteInt);
-            chordLength = 3;
-            break;
-        case 1:
-            chord = maj7(noteInt);
-            chordLength = 4;
-            break;
-        case 2:
-            chord = maj9(noteInt);
-            chordLength = 5;
-            break;
-        case 3:
-            chord = maj11(noteInt);
-            chordLength = 6;
-            break;
-        case 4:
-            chord = maj13(noteInt);
-            chordLength = 7;
-            break;
-        case 5:
-            chord = minor(noteInt);
-            chordLength = 3;
-            break;
-        case 6:
-            chord = min7(noteInt);
-            chordLength = 4;
-            break;
-        case 7:
-            chord = min9(noteInt);
-            chordLength = 5;
-            break;
-        case 8:
-            chord = min11(noteInt);
-            chordLength = 6;
-            break;
-        case 9:
-            chord = min13(noteInt);
-            chordLength = 7;
-            break;
-        case 10:
-            chord = d7(noteInt);
-            chordLength = 4;
-            break;
-        case 11:
-            chord = d9(noteInt);
-            chordLength = 5;
-            break;
-        case 12:
-            chord = d11(noteInt);
-            chordLength = 6;
-            break;
-        case 13:
-            chord = d13(noteInt);
-            chordLength = 7;
-            break;
-        case 14:
-            chord = dim(noteInt);
-            chordLength = 3;
-            break;
-        case 15:
-            chord = dim7(noteInt);
-            chordLength = 4;
-            break;
-        case 16:
-            chord = min9b5(noteInt);
-            chordLength = 5;
-            break;
-        case 17:
-            chord = min11b5(noteInt);
-            chordLength = 6;
-            break;
-        case 18:
-            chord = min13b5(noteInt);
-            chordLength = 7;
-            break;
-        default:
-            chord = major(0);
-    }
+    QString o;
 
     for(int i = 0; i < chordLength; i++){
        o.append(notes[chord[i]]);
@@ -259,4 +172,9 @@ void MainWindow::on_scalesButton_clicked()
     ui->ScaleOutputLabel->setText(o);
 
     updatePiano(scale, scaleLength);
+}
+
+void MainWindow::on_addChordButton_clicked()
+{
+
 }

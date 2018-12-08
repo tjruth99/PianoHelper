@@ -18,7 +18,7 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>160</y>
+      <y>170</y>
       <width>521</width>
       <height>151</height>
      </rect>
@@ -26,7 +26,7 @@
     <property name="currentIndex">
      <number>0</number>
     </property>
-    <widget class="QWidget" name="tab">
+    <widget class="QWidget" name="chordTab">
      <attribute name="title">
       <string>Chords</string>
      </attribute>
@@ -181,21 +181,6 @@
       </property>
       <item>
        <property name="text">
-        <string>A</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>A#/Bb</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>B</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
         <string>C</string>
        </property>
       </item>
@@ -239,9 +224,24 @@
         <string>G#/Ab</string>
        </property>
       </item>
+      <item>
+       <property name="text">
+        <string>A</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>A#/Bb</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>B</string>
+       </property>
+      </item>
      </widget>
     </widget>
-    <widget class="QWidget" name="tab_2">
+    <widget class="QWidget" name="scaleTab">
      <attribute name="title">
       <string>Scales</string>
      </attribute>
@@ -429,6 +429,319 @@
         <string>G#/Ab</string>
        </property>
       </item>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="progressionTab">
+     <attribute name="title">
+      <string>Chord Progression</string>
+     </attribute>
+     <widget class="QComboBox" name="ProgNoteComboBox">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>A</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>A#/Bb</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>B</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>C</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>C#/Db</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>D</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>D#/Eb</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>E</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>F</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>F#/Gb</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>G</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>G#/Ab</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="addChordButton">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>80</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Add Chord</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="ProgTypeComboBox">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>80</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Major</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Maj7</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Maj9</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Maj11</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Maj13</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Minor</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Min7</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Min9</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Min11</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Min13</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>d7</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>d9</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>d11</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>d13</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Diminished</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Dim7</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Min9(b5)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Min11(b5)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Min13(b5)</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="chord_1">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>10</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Chord 1</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chord_2">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>10</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Chord 2</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chord_3">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>10</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Chord 3</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chord_4">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>10</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Chord 4</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="remove_1">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>50</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">text-align: center;
+</string>
+      </property>
+      <property name="text">
+       <string>X</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="remove_2">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>50</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">text-align: center;
+</string>
+      </property>
+      <property name="text">
+       <string>X</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="remove_3">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>50</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">text-align: center;
+</string>
+      </property>
+      <property name="text">
+       <string>X</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="remove_4">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>50</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">text-align: center;
+</string>
+      </property>
+      <property name="text">
+       <string>X</string>
+      </property>
      </widget>
     </widget>
    </widget>

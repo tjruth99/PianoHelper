@@ -40,6 +40,8 @@
 
 */
 
+int * findChord(int noteInt, int index, int *length);
+
 int * major(int root);
 int * maj7(int root);
 int * maj9(int root);
@@ -62,3 +64,4 @@ int * dim7(int root);
 int * min9b5(int root);
 int * min11b5(int root);
 int * min13b5(int root);
+

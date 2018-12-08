@@ -21,10 +21,13 @@ private slots:
 
     void on_scalesButton_clicked();
 
+    void on_addChordButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     QString notes[12] = {"C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb", "G", "G#/Ab", "A", "A#/Bb", "B"};
     QVector<QLabel*> notelabels;
+    QVector<int *> chordProgression;
     int * currentPianoNotes;
     int currentPianoNotesN;
 
