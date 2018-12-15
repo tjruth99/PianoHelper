@@ -51,7 +51,6 @@ MainWindow::MainWindow(QWidget *parent) :
     n.n = 0;
 
     for(int i = 0; i < 4; i++){
-        int * a = new int ();
         chordProgression.append(n);
     }
 }
@@ -165,6 +164,8 @@ void MainWindow::on_chord_1_clicked()
     PH_Chord c = chordProgression.at(0);
 
     updatePiano(c.chord, c.n);
+
+    curChordPos = 0;
 }
 
 void MainWindow::on_chord_2_clicked()
@@ -172,6 +173,8 @@ void MainWindow::on_chord_2_clicked()
     PH_Chord c = chordProgression.at(1);
 
     updatePiano(c.chord, c.n);
+
+    curChordPos = 1;
 }
 
 void MainWindow::on_chord_3_clicked()
@@ -179,6 +182,8 @@ void MainWindow::on_chord_3_clicked()
     PH_Chord c = chordProgression.at(2);
 
     updatePiano(c.chord, c.n);
+
+    curChordPos = 2;
 }
 
 void MainWindow::on_chord_4_clicked()
@@ -186,4 +191,42 @@ void MainWindow::on_chord_4_clicked()
     PH_Chord c = chordProgression.at(3);
 
     updatePiano(c.chord, c.n);
+
+    curChordPos = 3;
+}
+
+void MainWindow::on_remove_1_clicked()
+{
+    PH_Chord n = PH_Chord();
+    n.n = 0;
+    chordProgression.replace(0, n);
+
+    ui->chord_1->setText("Chord 1");
+}
+
+void MainWindow::on_remove_2_clicked()
+{
+    PH_Chord n = PH_Chord();
+    n.n = 0;
+    chordProgression.replace(1, n);
+
+    ui->chord_2->setText("Chord 2");
+}
+
+void MainWindow::on_remove_3_clicked()
+{
+    PH_Chord n = PH_Chord();
+    n.n = 0;
+    chordProgression.replace(2, n);
+
+    ui->chord_3->setText("Chord 3");
+}
+
+void MainWindow::on_remove_4_clicked()
+{
+    PH_Chord n = PH_Chord();
+    n.n = 0;
+    chordProgression.replace(3, n);
+
+    ui->chord_4->setText("Chord 4");
 }

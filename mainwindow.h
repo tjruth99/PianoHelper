@@ -36,6 +36,14 @@ private slots:
 
     void on_chord_4_clicked();
 
+    void on_remove_1_clicked();
+
+    void on_remove_2_clicked();
+
+    void on_remove_3_clicked();
+
+    void on_remove_4_clicked();
+
 private:
     Ui::MainWindow *ui;
     QString notes[12] = {"C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb", "G", "G#/Ab", "A", "A#/Bb", "B"};
