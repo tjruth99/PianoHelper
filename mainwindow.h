@@ -4,6 +4,11 @@
 #include <QMainWindow>
 #include <QLabel>
 
+struct PH_Chord{
+    int * chord;
+    int n;
+};
+
 namespace Ui {
 class MainWindow;
 }
@@ -23,11 +28,20 @@ private slots:
 
     void on_addChordButton_clicked();
 
+    void on_chord_1_clicked();
+
+    void on_chord_2_clicked();
+
+    void on_chord_3_clicked();
+
+    void on_chord_4_clicked();
+
 private:
     Ui::MainWindow *ui;
     QString notes[12] = {"C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb", "G", "G#/Ab", "A", "A#/Bb", "B"};
     QVector<QLabel*> notelabels;
-    QVector<int *> chordProgression;
+    QVector<PH_Chord> chordProgression;
+    int curChordPos;
     int * currentPianoNotes;
     int currentPianoNotesN;
 

@@ -43,6 +43,17 @@ MainWindow::MainWindow(QWidget *parent) :
         notelabels.at(i)->setVisible(false);
     }
 
+    curChordPos = 0;
+
+    PH_Chord n = PH_Chord();
+
+    n.chord = new int[0];
+    n.n = 0;
+
+    for(int i = 0; i < 4; i++){
+        int * a = new int ();
+        chordProgression.append(n);
+    }
 }
 
 MainWindow::~MainWindow()
@@ -126,4 +137,53 @@ void MainWindow::on_addChordButton_clicked()
     updatePiano(chord, chordLength);
 
     // Add code to implement chord progression
+
+    PH_Chord c = {chord, chordLength};
+
+    chordProgression.replace(curChordPos, c);
+
+    switch(curChordPos){
+        case 0:
+            ui->chord_1->setText(notes[noteInt]);
+            break;
+        case 1:
+            ui->chord_2->setText(notes[noteInt]);
+            break;
+        case 2:
+            ui->chord_3->setText(notes[noteInt]);
+            break;
+        case 3:
+            ui->chord_4->setText(notes[noteInt]);
+            break;
+    }
+
+    curChordPos = (curChordPos + 1) % 4;
+}
+
+void MainWindow::on_chord_1_clicked()
+{
+    PH_Chord c = chordProgression.at(0);
+
+    updatePiano(c.chord, c.n);
+}
+
+void MainWindow::on_chord_2_clicked()
+{
+    PH_Chord c = chordProgression.at(1);
+
+    updatePiano(c.chord, c.n);
+}
+
+void MainWindow::on_chord_3_clicked()
+{
+    PH_Chord c = chordProgression.at(2);
+
+    updatePiano(c.chord, c.n);
+}
+
+void MainWindow::on_chord_4_clicked()
+{
+    PH_Chord c = chordProgression.at(3);
+
+    updatePiano(c.chord, c.n);
 }
