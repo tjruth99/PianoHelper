@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/notes">
+        <file>Notes/A4.wav</file>
+        <file>Notes/A5.wav</file>
+        <file>Notes/Ab4.wav</file>
+        <file>Notes/Ab5.wav</file>
+        <file>Notes/B4.wav</file>
+        <file>Notes/B5.wav</file>
+        <file>Notes/Bb4.wav</file>
+        <file>Notes/Bb5.wav</file>
+        <file>Notes/C4.wav</file>
+        <file>Notes/C5.wav</file>
+        <file>Notes/D4.wav</file>
+        <file>Notes/D5.wav</file>
+        <file>Notes/Db4.wav</file>
+        <file>Notes/Db5.wav</file>
+        <file>Notes/E4.wav</file>
+        <file>Notes/E5.wav</file>
+        <file>Notes/Eb4.wav</file>
+        <file>Notes/Eb5.wav</file>
+        <file>Notes/F4.wav</file>
+        <file>Notes/F5.wav</file>
+        <file>Notes/G4.wav</file>
+        <file>Notes/G5.wav</file>
+        <file>Notes/Gb4.wav</file>
+        <file>Notes/Gb5.wav</file>
+    </qresource>
+</RCC>

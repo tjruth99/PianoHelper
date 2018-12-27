@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QLabel>
+#include <QMediaPlayer>
 
 struct PH_Chord{
     int * chord;
@@ -54,6 +55,9 @@ private:
     int currentPianoNotesN;
 
     void updatePiano(int * noteArray, int n);
+
+    QMediaPlayer * player;
+    QVector<QUrl> noteURls;
 };
 
 #endif // MAINWINDOW_H
