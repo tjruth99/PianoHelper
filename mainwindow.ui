@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="chordTab">
      <attribute name="title">
@@ -685,8 +685,7 @@
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">text-align: center;
-</string>
+       <string notr="true">text-align: center;</string>
       </property>
       <property name="text">
        <string>X</string>
@@ -702,8 +701,7 @@
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">text-align: center;
-</string>
+       <string notr="true">text-align: center;</string>
       </property>
       <property name="text">
        <string>X</string>
@@ -719,8 +717,7 @@
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">text-align: center;
-</string>
+       <string notr="true">text-align: center;</string>
       </property>
       <property name="text">
        <string>X</string>
@@ -736,8 +733,7 @@
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">text-align: center;
-</string>
+       <string notr="true">text-align: center;</string>
       </property>
       <property name="text">
        <string>X</string>
@@ -1724,7 +1720,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: black; font-color: white;</string>
+     <string notr="true">background-color: black;</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2064,7 +2060,7 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: black; font-color: white;</string>
+     <string notr="true">background-color: black;</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Box</enum>
@@ -2697,6 +2693,19 @@
      <enum>Qt::AutoText</enum>
     </property>
    </widget>
+   <widget class="QPushButton" name="playButton">
+    <property name="geometry">
+     <rect>
+      <x>464</x>
+      <y>150</y>
+      <width>41</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Play</string>
+    </property>
+   </widget>
    <zorder>tabWidget</zorder>
    <zorder>notelabel_2</zorder>
    <zorder>piano_14</zorder>
@@ -2754,6 +2763,7 @@
    <zorder>notelabel_08</zorder>
    <zorder>notelabel_01</zorder>
    <zorder>notelabel_13</zorder>
+   <zorder>playButton</zorder>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">

@@ -42,10 +42,10 @@ MainWindow::MainWindow(QWidget *parent) :
     notelabels.append(ui->notelabel_25);
     notelabels.append(ui->notelabel_26);
 
-    noteURls.append(QUrl("qrc:/notes/C4.wav"));
-    noteURls.append(QUrl("qrc:/notes/Db4.wav"));
-    noteURls.append(QUrl("qrc:/notes/D4.wav"));
-    noteURls.append(QUrl("qrc:/notes/Eb4.wav"));
+    noteURls.append(QUrl("qrc:/notes/Notes/C4.wav"));
+    noteURls.append(QUrl("qrc:/notes/Notes/Db4.wav"));
+    noteURls.append(QUrl("qrc:/notes/Notes/D4.wav"));
+    noteURls.append(QUrl("qrc:/notes/Notes/Eb4.wav"));
     noteURls.append(QUrl("qrc:/notes/Notes/E4.wav"));
     noteURls.append(QUrl("qrc:/notes/Notes/F4.wav"));
     noteURls.append(QUrl("qrc:/notes/Notes/Gb4.wav"));
@@ -88,10 +88,25 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::playNotes(){
+    qInfo() << "Play Notes";
+    if(currentPianoNotesN == 0){ return; }
+
+    player = new QMediaPlayer(this);
+
+    for(int i = 0; i < 27; i++){
+        if(notelabels[i]->isVisible()){
+            qInfo() << noteURls.at(i) << endl;
+            player->setMedia(noteURls.at(i));
+            player->play();
+        }
+    }
+    free(player);
+}
+
 void MainWindow::updatePiano(int * noteArray, int n){
     int last = noteArray[0];
     int curNote;
-    player = new QMediaPlayer(this);
 
     for(int i = 0; i < 27; i++){
         notelabels.at(i)->setVisible(false);
@@ -110,14 +125,6 @@ void MainWindow::updatePiano(int * noteArray, int n){
 
     currentPianoNotes = noteArray;
     currentPianoNotesN = n;
-
-
-    for(int i = 0; i < 26; i++){
-        if(notelabels[i]->isVisible()){
-            player->setMedia(noteURls.at(i));
-            player->play();
-        }
-    }
 }
 
 
@@ -266,4 +273,9 @@ void MainWindow::on_remove_4_clicked()
     chordProgression.replace(3, n);
 
     ui->chord_4->setText("Chord 4");
+}
+
+void MainWindow::on_playButton_clicked()
+{
+    playNotes();
 }

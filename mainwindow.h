@@ -45,6 +45,10 @@ private slots:
 
     void on_remove_4_clicked();
 
+    void on_pushButton_clicked();
+
+    void on_playButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     QString notes[12] = {"C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb", "G", "G#/Ab", "A", "A#/Bb", "B"};
@@ -55,6 +59,7 @@ private:
     int currentPianoNotesN;
 
     void updatePiano(int * noteArray, int n);
+    void playNotes();
 
     QMediaPlayer * player;
     QVector<QUrl> noteURls;
