@@ -49,6 +49,14 @@ private slots:
 
     void on_playButton_clicked();
 
+    void on_PlayNoteButton_clicked();
+
+    void on_RepeatButton_clicked();
+
+    void on_GuessButton_clicked();
+
+    void on_ResetButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     QString notes[12] = {"C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb", "G", "G#/Ab", "A", "A#/Bb", "B"};
@@ -60,9 +68,16 @@ private:
 
     void updatePiano(int * noteArray, int n);
     void playNotes();
+    void updateScore();
 
     QMediaPlayer * player;
     QVector<QUrl> noteURls;
+
+    QMediaPlayer * EarTrainingPlayer;
+    int correctGuesses;
+    int totalGuesses;
+    int curNoteGuess;
+    int newGuess;
 };
 
 #endif // MAINWINDOW_H

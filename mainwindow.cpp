@@ -6,6 +6,7 @@
 
 #include <QMediaPlayer>
 #include <QFileInfo>
+#include <QTime>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -81,6 +82,11 @@ MainWindow::MainWindow(QWidget *parent) :
     for(int i = 0; i < 4; i++){
         chordProgression.append(n);
     }
+
+    EarTrainingPlayer = new QMediaPlayer(this);
+    totalGuesses = 0;
+    correctGuesses = 0;
+    newGuess = 0;
 }
 
 MainWindow::~MainWindow()
@@ -203,6 +209,8 @@ void MainWindow::on_addChordButton_clicked()
     curChordPos = (curChordPos + 1) % 4;
 }
 
+void MainWindow::on_pushButton_clicked(){}
+
 void MainWindow::on_chord_1_clicked()
 {
     PH_Chord c = chordProgression.at(0);
@@ -278,4 +286,62 @@ void MainWindow::on_remove_4_clicked()
 void MainWindow::on_playButton_clicked()
 {
     playNotes();
+}
+
+void MainWindow::on_PlayNoteButton_clicked()
+{
+    if(newGuess == 1){
+        ui->GuessLabel->setText("");
+        ui->CorrectLabel->setText(notes[curNoteGuess]);
+        totalGuesses++;
+        updateScore();
+    }
+
+    QTime time = QTime::currentTime();
+    qsrand((uint)time.msec());
+    curNoteGuess = qrand() % 12;
+    qInfo("%d", curNoteGuess);
+
+    EarTrainingPlayer->setMedia(noteURls.at(curNoteGuess));
+    EarTrainingPlayer->play();
+    newGuess = 1;
+}
+
+void MainWindow::on_RepeatButton_clicked()
+{
+    EarTrainingPlayer->play();
+}
+
+void MainWindow::on_GuessButton_clicked()
+{
+    if(newGuess == 0){
+        return;
+    }
+    newGuess = 0;
+
+    totalGuesses++;
+    if(ui->GuessNoteComboBox->currentIndex() == curNoteGuess){
+        correctGuesses++;
+    }
+
+    ui->GuessLabel->setText(notes[ui->GuessNoteComboBox->currentIndex()]);
+    ui->CorrectLabel->setText(notes[curNoteGuess]);
+
+    updateScore();
+}
+
+void MainWindow::on_ResetButton_clicked()
+{
+    correctGuesses = 0;
+    totalGuesses = 0;
+
+    updateScore();
+}
+
+void MainWindow::updateScore(){
+
+    QString s;
+    s.sprintf("%d/%d (%.2f%%)", correctGuesses, totalGuesses, ((double)correctGuesses/totalGuesses)*100);
+    ui->ScoreLabel->setText(s);
+
 }
