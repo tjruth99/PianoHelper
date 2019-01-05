@@ -95,19 +95,14 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::playNotes(){
-    qInfo() << "Play Notes";
     if(currentPianoNotesN == 0){ return; }
 
-    player = new QMediaPlayer(this);
-
-    for(int i = 0; i < 27; i++){
-        if(notelabels[i]->isVisible()){
-            qInfo() << noteURls.at(i) << endl;
-            player->setMedia(noteURls.at(i));
-            player->play();
-        }
+    QVector<QMediaPlayer> chrd;
+    for(int i = 0; i < currentPianoNotesN; i++){
+        QMediaPlayer * p = new QMediaPlayer(this);
+        p->setMedia(noteURls.at(currentPianoNotes[i]));
+        p->play();
     }
-    free(player);
 }
 
 void MainWindow::updatePiano(int * noteArray, int n){

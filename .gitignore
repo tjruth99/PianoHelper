@@ -1,2 +1,6 @@
 PianoHelper.pro.user
 PianoHelper.pro.user.12b2246.4.8-pre1
+.qmake.stash
+Makefile
+Makefile.Debug
+Makefile.Release

@@ -34,6 +34,8 @@ HEADERS += \
         mainwindow.h \
     Chords.h \
     Scales.h \
+    ui_mainwindow.h \
+    ../build-PianoHelper-Desktop_Qt_5_12_0_MinGW_64_bit-Debug/ui_mainwindow.h \
     ui_mainwindow.h
 
 FORMS += \
