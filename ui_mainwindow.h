@@ -61,6 +61,7 @@ public:
     QLabel *GuessLabel;
     QLabel *label_2;
     QLabel *label_3;
+    QLabel *EarTrainingState;
     QLabel *notelabel_00;
     QLabel *notelabel_02;
     QLabel *notelabel_01;
@@ -299,7 +300,7 @@ public:
         earTab->setObjectName(QString::fromUtf8("earTab"));
         PlayNoteButton = new QPushButton(earTab);
         PlayNoteButton->setObjectName(QString::fromUtf8("PlayNoteButton"));
-        PlayNoteButton->setGeometry(QRect(40, 20, 91, 41));
+        PlayNoteButton->setGeometry(QRect(40, 30, 91, 31));
         GuessNoteComboBox = new QComboBox(earTab);
         GuessNoteComboBox->addItem(QString());
         GuessNoteComboBox->addItem(QString());
@@ -351,6 +352,12 @@ public:
         label_3 = new QLabel(earTab);
         label_3->setObjectName(QString::fromUtf8("label_3"));
         label_3->setGeometry(QRect(410, 20, 47, 16));
+        EarTrainingState = new QLabel(earTab);
+        EarTrainingState->setObjectName(QString::fromUtf8("EarTrainingState"));
+        EarTrainingState->setGeometry(QRect(210, 10, 61, 16));
+        EarTrainingState->setAutoFillBackground(true);
+        EarTrainingState->setStyleSheet(QString::fromUtf8(""));
+        EarTrainingState->setFrameShape(QFrame::Box);
         tabWidget->addTab(earTab, QString());
         notelabel_00 = new QLabel(centralWidget);
         notelabel_00->setObjectName(QString::fromUtf8("notelabel_00"));
@@ -999,7 +1006,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(3);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -1141,6 +1148,7 @@ public:
         GuessLabel->setText(QString());
         label_2->setText(QApplication::translate("MainWindow", "Your Guess:", nullptr));
         label_3->setText(QApplication::translate("MainWindow", "Correct:", nullptr));
+        EarTrainingState->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(earTab), QApplication::translate("MainWindow", "Ear Training", nullptr));
         notelabel_00->setText(QString());
         notelabel_02->setText(QString());

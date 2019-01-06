@@ -14,7 +14,6 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    // There is a better solution to this, but want to get the basic logic working first
     notelabels.append(ui->notelabel_00);
     notelabels.append(ui->notelabel_01);
     notelabels.append(ui->notelabel_02);
@@ -147,6 +146,7 @@ void MainWindow::on_chordsButton_clicked()
 
     ui->ChordsOutputLabel->setText(o);
     updatePiano(chord, chordLength);
+    playNotes();
 }
 
 void MainWindow::on_scalesButton_clicked()
@@ -300,6 +300,10 @@ void MainWindow::on_PlayNoteButton_clicked()
     EarTrainingPlayer->setMedia(noteURls.at(curNoteGuess));
     EarTrainingPlayer->play();
     newGuess = 1;
+
+    QPalette p = ui->EarTrainingState->palette();
+    p.setColor(QPalette::Window, QColor(Qt::blue));
+    ui->EarTrainingState->setPalette(p);
 }
 
 void MainWindow::on_RepeatButton_clicked()
@@ -314,15 +318,21 @@ void MainWindow::on_GuessButton_clicked()
     }
     newGuess = 0;
 
+    QPalette p = ui->EarTrainingState->palette();
+
     totalGuesses++;
     if(ui->GuessNoteComboBox->currentIndex() == curNoteGuess){
         correctGuesses++;
+        p.setColor(QPalette::Window, QColor(Qt::green));
+    } else {
+        p.setColor(QPalette::Window, QColor(Qt::red));
     }
 
     ui->GuessLabel->setText(notes[ui->GuessNoteComboBox->currentIndex()]);
     ui->CorrectLabel->setText(notes[curNoteGuess]);
 
     updateScore();
+    ui->EarTrainingState->setPalette(p);
 }
 
 void MainWindow::on_ResetButton_clicked()
@@ -331,6 +341,10 @@ void MainWindow::on_ResetButton_clicked()
     totalGuesses = 0;
 
     updateScore();
+
+    QPalette p = ui->EarTrainingState->palette();
+    p.setColor(QPalette::Window, QColor(Qt::blue));
+    ui->EarTrainingState->setPalette(p);
 }
 
 void MainWindow::updateScore(){
